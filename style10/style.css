@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body, ul {
+    margin: 0;
+    
+}
+
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 15px ;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.link, .sub-link {
+    background-color: rgb(20, 141, 101);
+    color: rgb(216, 212, 207);
+    font-size: 20px;
+    padding: 25px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid grey;
+}
+
+.second-link {
+    background-color: rgb(20, 141, 101);
+    color: rgb(216, 212, 207);
+    font-size: 20px;
+    padding: 25px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid grey;
+}
+
+.item {
+    float: left;
+    position: relative;
+    
+}
+
+.second-item {
+    position: relative;
+}
+
+.second-dropdown {
+    position: relative;
+}
+
+.second-dropdown {
+    right: -130px;
+}
+
+.link:hover  {
+    background-color: aqua;
+    color: darkgrey;
+    box-shadow: 1px 5px 10px -5px black;
+}
+
+.second-link:hover {
+    background-color: aqua;
+    color: darkgrey;
+    box-shadow: 1px 5px 10px -5px black;
+}
+
+.dropdown  {
+    display: none;
+    position: absolute;
+}
+
+.second-dropdown {
+    display: none;
+    position: absolute;
+}
+
+.item:hover .dropdown {
+    display: block;
+}
+
+.sub-item:hover .second-dropdown {
+    display: block;
+}
+
+.item:hover .link {
+    background-color: aqua;
+    color: darkgrey;
+    transition: all 0.3s ease;
+}
+
+.second-item:hover .second-link {
+    background-color: aqua;
+    color: darkgrey;
+    transition: all 0.3s ease;
+}
+
+.sub-link:hover {
+    background-color: aqua;
+    color: darkgrey;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+}
+
+.clearfix::after {
+    content: ' ' ;
+    display: block;
+    clear: both;
+}
+
+
+
